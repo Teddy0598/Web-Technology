@@ -1,0 +1,211 @@
+*{	
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.6), 0 2px 10px 0 rgba(0,0,0, 0.6);
+	background-color: white;
+	color: black;
+	text-align: center;
+	height: 58px;
+	border-bottom: 2px solid gray;
+}
+
+ul li{
+	padding-top: 20px;
+	display: inline-block;
+	float: right;
+}
+li a{
+	margin-right: 20px;
+	text-decoration: none;
+	color: black;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	padding: 5px;
+}
+ul li a:hover{
+	background-color: gray;
+	color: white;
+	transition: 0.6s ease;
+}
+ul li.active>a{
+	background-color: gray;
+	color: white;
+}
+li a .material-icons, .fas{
+	padding-right: 5px;
+	font-size: 15px;
+}
+.logo{ 
+	float: left;
+	position: relative;
+	bottom: 100%;
+	left: 20px;
+	background-image: url("../images/logo.png");
+	background-size: cover;
+	width: 170px;
+	height: 150px;
+}
+#article{
+	width: 100%;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.4), 0 2px 10px 0 rgba(0,0,0, 0.4);
+	height: 300px;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/101.jpg);
+	height: 110vh;
+	background-size: cover;
+	background-position: center;
+}
+#article p{
+	width: 60%;
+	font-family: 'Aladin',Zapf Chancery, cursive;
+	margin-left: 25%;
+	padding-top: 170px;
+	font-size: 110px;
+	color: #fff;
+	font-style: bold;
+	padding-left: 20px;
+}
+.button a{
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	position: relative;
+	top: 200px;
+	left: 35%;
+	margin-right: 100px;
+	text-decoration: none;
+	border-radius: 20px;
+	border:2px solid #fff;
+	padding: 15px;
+
+}
+.btn{
+	color:#fff;
+}
+.btn:hover{
+	background-color: #fff;
+	color:#000;
+	transition: 0.7s ease;
+}
+#article .box{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.box span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+.box span:nth-child(2)
+{
+	animation-delay: -0.2s;
+	transform: rotate(45deg) translate(-20px,-20px);
+
+}
+.box span:nth-child(3)
+{
+	animation-delay: -0.4s;
+
+}
+@keyframes animate
+{
+	0%
+	{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px,-20px);
+	}
+	50%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px,20px);
+	}
+}
+#facility{
+	height: 400px; 
+}
+#tourist h2{
+	margin: 0;
+}
+#facility h2{
+	font-family: 'Playfair Display', serif;
+	font-size:40px;
+	padding: 10px;
+	border-bottom: 2px solid gray;
+}
+#tourist{
+	max-height: 1200px; 
+
+}
+#tourist h2{
+	font-family: 'Playfair Display', serif;
+	font-size:40px;
+	padding: 10px;
+	border-bottom: 2px solid gray;
+}
+.section{
+	width: 98%;
+	margin-top: 20px;
+	background-image: linear-gradient(rgba(235, 250, 0 ,0.6),rgba(124, 248, 111 ,1));
+	box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.6), 0 2px 10px 0 rgba(0,0,0, 0.6);
+	margin-right: 0;
+	margin-left: 20px;
+}
+h2 a{
+	font-size: .8em;
+	text-decoration: none;
+}
+h2 a:hover{
+	text-decoration: underline;
+}
+
+#video{
+	height: 400px; 
+}
+#video h2{
+	font-size:30px;
+	padding: 20px;
+	border-bottom: 2px solid gray;
+}
+#about{
+	height: 400px; 
+}
+#about h2{
+	font-size:30px;
+	padding: 20px;
+	border-bottom: 2px solid gray;
+}
+#contact{
+	height: 400px; 
+}
+#contact h2{
+	font-size:30px;
+	padding: 20px;
+	border-bottom: 2px solid gray;
+}
+#footer{
+	padding-top: 30px;
+	text-align: center;
+	color: white;
+	height:100px;
+	background-color: #000;
+	border-top: 2px solid gray;
+}
+#footer p{
+	padding-top: 10px;
+}
